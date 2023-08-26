@@ -7,7 +7,7 @@ This is a simple plugin that captures periodically signal information from SDR# 
 Currently, the following parameters are captured:
 1. Noise Floor [dbFS]
 2. Signal Peak [dbFS]
-3. Signal / Noise ratio [dbFS]
+3. Signal / Noise ratio [db]
 
 The values are rounded to one decimal and concatenated into a string in the order shown above. The values are separated by a semicolon (';'). The string is terminated with a newline character ('\n').
 
