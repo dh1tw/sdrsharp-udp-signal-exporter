@@ -121,7 +121,7 @@
     <value>This plugin exports the following values in UDP Datagrams:
 1. Noise Floor [dBFS]
 2. Signal (Peak) [dBFS]
-3. Signal/Noise Ratio [dBFS]
+3. Signal/Noise Ratio [dB]
 
 The values are rounded to one decimal and separated by
 a semicolon (;). The order of the values is as shown above. 
