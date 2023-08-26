@@ -7,5 +7,5 @@ using System.Runtime.Versioning;
 [assembly: AssemblyProduct("UDP Signal Exporter")]
 [assembly: AssemblyCopyright("Copyright © Tobias Wellnitz (DH1TW) 2023")]
 [assembly: AssemblyCompany("DH1TW")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0")]
+[assembly: AssemblyFileVersion("1.0.0")]
