@@ -1,5 +1,8 @@
 # UDPSignalExporter Plugin for SDR#
 
+![Build Status](https://github.com/dh1tw/sdrsharp-udp-signal-exporter/workflows/Windows%20Build/badge.svg?branch=master)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 ![Screenshot](docs/sdrsharp-udp-signal-exporter.png?raw=true)
 
 This is a simple plugin that captures periodically signal information from SDR# and sends it via UDP to other applications.
@@ -21,7 +24,8 @@ The plugin was built with [Visual Studio 2022](https://visualstudio.microsoft.co
 
 ## Install
 
-[Download]() or fetch from the `Release/net7.0-windows` folder the file `SDRSharp.UDPSignalExporter.dll` and drop it into the plugin directory of your SDR# installation. The plugin will then become available with SDR#'s plugin menu.
+[Download the latest release](https://github.com/dh1tw/sdrsharp-udp-signal-exporter/releases) and drop it into the plugin directory of your SDR# installation. The plugin will then become available with SDR#'s plugin menu. 
+In case you built the plugin yourself, will find the `SDRSharp.UDPSignalExporter.dll` in the `Release/net7.0-windows` folder.
 
 ## Capture the data
 
@@ -89,3 +93,6 @@ Peak:  -117.6dbFS
 S/N:   1.8db
 
 ````
+
+## License
+This plugin is published under the permissive [MIT License](LICENSE.MD).
