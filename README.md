@@ -11,6 +11,8 @@ Currently, the following parameters are captured:
 
 The values are rounded to one decimal and concatenated into a string in the order shown above. The values are separated by a semicolon (';'). The string is terminated with a newline character ('\n').
 
+The plugin allows you to adjust the update interval in steps of 50ms. In most cases you want to send a UDP broadcast of send the UDP datagram to a specific IP address.
+
 ## Build System
 
 This plugin is based on the Template provided by the [SDR# SDK for Plugin Developers](https://airspy.com/download/).
@@ -22,6 +24,8 @@ The plugin was built with [Visual Studio 2022](https://visualstudio.microsoft.co
 [Download]() or fetch from the `Release/net7.0-windows` folder the file `SDRSharp.UDPSignalExporter.dll` and drop it into the plugin directory of your SDR# installation. The plugin will then become available with SDR#'s plugin menu.
 
 ## Capture the data
+
+It's easy to capture the UDP datagram for further processing. Find below a couple of examples how to capture and process the data.
 
 ### CLI (Linux & MacOS)
 
@@ -44,7 +48,7 @@ $ socat - udp-recv:9988
 
 ### CLI (Windows)
 
-On Windows, execute the powershell script [demo/listen-udp.ps1](demo/listen-udp.ps1)
+On Windows, execute the powershell script [demo/udp-listener.ps1](demo/udp-listener.ps1)
 
 ```` powershell
 
@@ -63,4 +67,25 @@ Content -101.1;-96.8;4.3
 
 ### Python
 
-You can find in [demo/listen-udp.py](demo/listen-udp.py) an example python3 script on how to receive and further process the data.
+You can find in [demo/udp-listener.py](demo/udp-listener.py) an example python3 script on how to receive and further process the data.
+
+```` bash
+
+$ python.exe udp-listener.py
+
+Got an UDP Message from 192.168.1.110
+Floor: -119.3dbFS
+Peak:  -117.6dbFS
+S/N:   1.7db
+
+Got an UDP Message from 192.168.1.110
+Floor: -119.2dbFS
+Peak:  -117.5dbFS
+S/N:   1.7db
+
+Got an UDP Message from 192.168.1.110
+Floor: -119.3dbFS
+Peak:  -117.6dbFS
+S/N:   1.8db
+
+````
