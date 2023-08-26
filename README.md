@@ -69,9 +69,9 @@ Content -101.1;-96.8;4.3
 
 You can find in [demo/udp-listener.py](demo/udp-listener.py) an example python3 script on how to receive and further process the data.
 
-```` bash
+```` powershell
 
-$ python.exe udp-listener.py
+PS C:\> python.exe udp-listener.py
 
 Got an UDP Message from 192.168.1.110
 Floor: -119.3dbFS
