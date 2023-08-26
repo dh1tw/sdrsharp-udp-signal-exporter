@@ -4,12 +4,12 @@ using SDRSharp.Radio;
 
 namespace SDRSharp.UDPSignalExporter
 {
-    public class UdpSignalReporterPlugin : ISharpPlugin, ICanLazyLoadGui, ISupportStatus, IExtendedNameProvider
+    public class UdpSignalExporterPlugin : ISharpPlugin, ICanLazyLoadGui, ISupportStatus, IExtendedNameProvider
     {
         private ControlPanel _gui;
         private ISharpControl _control;
 
-        public string DisplayName => "UDPSignalReporter";
+        public string DisplayName => "UDPSignalExporter";
         
         public string Category => "Misc";
         
